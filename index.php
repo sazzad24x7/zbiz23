@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Articles - Articles | BizSolutions - Free Website Template from Templates.com</title>
 <meta name="description" content="Place your description here">
 <meta name="keywords" content="put, your, keyword, here">
 <meta name="author" content="Templates.com - website templates provider">
@@ -25,8 +24,9 @@
 <!--[if lt IE 9]>
 	<script type="text/javascript" src="js/html5.js"></script>
 <![endif]-->
+<?php wp_head();?>
 </head>
-<body id="page3">
+<body id="page3" <?php body_class();?>>
 <div class="tail-bottom">
 	<div id="main" class="zerogrid">
 <!-- header -->
@@ -129,5 +129,6 @@
 		</footer>
 	</div>
 </div>
+<?php footer();?>
 </body>
 </html>

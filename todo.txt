@@ -1,0 +1,43 @@
+Theme Activate
+1. Theme Folder
+2. Index.php
+3. Style.css with style header
+4. Screenshot.png / screenshot.jpg
+Index.php
+1. Language_attributes()
+2. Bloginfo(‘charset’)
+3. Bloginfo(‘desription’)
+4. Wp_head(), wp_footer(), body_class()  add in index.php
+5. Title comes from functions.php
+a. Add_theme_support(‘title-tag’)
+
+Function zmusic_setup() {
+Add_theme_support(‘title-tag’);
+}
+
+Add_action(‘after_setup_theme’, ‘zmusic_setup’ );
+
+6. Use these functions to locate CSS, JS and Images: 
+Get_template_directory_uri(), 
+esc_url(), 
+bloginfo(‘stylesheet_url’) 
+
+7. Create header.php, footer.php and use get_header(), get_footer()
+8. Add all Add_theme_support() for functions.php
+9. Menu
+a. Menu register in functions.php
+b. Menu create and select that in specific location
+c. Apply menu in header.php replacing static ul>li
+d. Current class replace in css/style.css
+e. Register_nav_menu(), wp_nav_menu(‘theme_location’, ‘id’) 
+
+10. Using while loop make content dynamic
+<?php  While(have_posts(): the_post()) ?>
+The_title(), the_content(), the_author(), the_date(), the_permalink(), comments_number(), The_post_thumbnail(), comments_template(),
+
+<?php endwhile; ?>
+
+11. Use get_header(), get_footer()  and while loop in Single.php 
+
+
+
